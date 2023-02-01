@@ -204,7 +204,7 @@ function initTiles() {
 
 	}
 
-	const url = window.location.hash.replace( /^#/, '' ) || '../data/tileset.json';
+	const url = 'https://api.maptiler.com/tiles/terrain-quantized-mesh-v2/tiles.json?key=IcPVU9sMKjZJOEY2pjNM';
 	tiles = new TilesRenderer( url );
 	tiles.errorTarget = 2;
 	tiles.onLoadModel = onLoadModel;
